@@ -1,0 +1,31 @@
+<div class="product-details container" *ngIf="product">
+    <h2>{{ product.bagName }}</h2>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="product-image">
+          <img [src]="product.bagImg" alt="Product Image" class="img-fluid" />
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="product-info">
+          <p class="product-description">{{ product.bagDetails }}</p>
+          <p class="product-description">{{ product.bagDescription }}</p>
+          <p class="product-description"><i class='fas fa-star' style="color: gold;"></i>Ratings : {{ product.bagRating }}/5</p>
+          <p class="product-price">{{ product.bagPrice | currency:'INR' }}</p><br>
+          <button class="btn btn-primary" (click)="goBack()" >Close</button>
+          <!-- other product details -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+   
+
+ 
+ 
+
+
+  
+  
+  
